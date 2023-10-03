@@ -30,7 +30,7 @@ recalled = False
 # Determine if the tool is part of recall
 if serialNumber >= 123400 and serialNumber <= 123900  and  \
     (factory == 21 or factory == 23 or factory == 27) and \
-    ((year == 2021 and month >= 11) or (year == 2022  and month <= 7)):
+    ((year == 2021 and month >= 11) and (year == 2022  and month <= 7)):
     recalled = True
 else:
     recalled = False
